@@ -1,0 +1,27 @@
+table{
+    width: 50%;
+    margin: 20px auto;
+    border-color: black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(190, 185, 178);
+    border: 1px solid #000000;
+    padding: 20px;
+}
+
+td{
+    background-color: rgb(221, 224, 213);
+    padding: 20px;
+}
+
+body{
+    background-color: rgb(180, 230, 247);
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+}
