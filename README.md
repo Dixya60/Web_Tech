@@ -1,3 +1,3 @@
-This repository contains the assignment of web technology.\n
-Assignment_one : Homepage design\n
+This repository contains the assignments of web technology.
+Assignment_one : Homepage design
 Assignment_two : Table creation in html
