@@ -1,1 +1,1 @@
-# Web_Tech
+This repository contains the assignment of web technology.
