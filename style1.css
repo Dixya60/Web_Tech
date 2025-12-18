@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0px;
+    background-color: rgb(241, 227, 207);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background-color: rgb(142, 118, 89);
+    height: 70px;
+    width: 100%;
+}
+
+#logo img{
+    height: 70px;
+    width: 80px;
+}
+
+#logo, #navbar, #login_panel{
+    display: inline-block;
+}
+
+#login_panel a, #navbar a{
+    padding: 10px;
+    text-decoration: double;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+#logo, #navbar{
+    float: left;
+}
+
+#login_panel{
+    float: right;
+}
+
+#navbar a:hover, #login_panel a:hover{
+    background-color: rgb(177, 170, 170);
+}
+
+h1{
+    padding: 20px 0;
+    text-align: center;
+    background-color: azure;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+}
+
+.Welcome p{
+    background-color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: wavy;
+    padding-bottom: 20px;
+}
+
+.Boxes{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 40px;
+
+}
+
+.Box{
+    border: 1px soid black;
+    text-align: center;
+    gap: 5px;
+}
+
+.Box h2 {
+    margin-bottom: 20px; 
+}
+
+.Box.box1{
+    background-color: rgb(217, 240, 195);
+}
+
+.Box.box2{
+    background-color: rgb(186, 242, 244);
+}
+
+.Box.box3{
+    background-color: rgb(171, 193, 233);
+}
+
+.Box img{
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.Box p{
+    line-height: 1.4;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.invite{
+    text-align: center;
+    background-color: azure;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: azure;
+    margin-top: auto;
+}
+
