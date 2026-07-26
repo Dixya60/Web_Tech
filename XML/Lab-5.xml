@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<songs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Lab-5.xsd">
+
+    <song>
+        <name>Shape of You</name>
+        <singer>Ed Sheeran</singer>
+        <composed_by>Steve Mac</composed_by>
+        <length>4:24</length>
+    </song>
+
+    <song>
+        <name>Believer</name>
+        <singer>Imagine Dragons</singer>
+        <composed_by>Alex Da Kid</composed_by>
+        <length>3:24</length>
+    </song>
+
+    <song>
+        <name>Perfect</name>
+        <singer>Ed Sheeran</singer>
+        <composed_by>Will Hicks</composed_by>
+        <length>4:40</length>
+    </song>
+
+    <song>
+        <name>Faded</name>
+        <singer>Alan Walker</singer>
+        <composed_by>Jesper Borgen</composed_by>
+        <length>3:32</length>
+    </song>
+
+</songs>

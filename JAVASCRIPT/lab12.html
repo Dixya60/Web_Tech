@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Image Slider</title>
+    <style>
+        body { font-family: Arial; margin: 20px; text-align: center; }
+        #slider { 
+            width: 500px; 
+            height: 300px; 
+            margin: 20px auto; 
+            position: relative; 
+            overflow: hidden; 
+            border: 2px solid #ccc;
+        }
+        #slider img { 
+            width: 100%; 
+            height: 100%; 
+            display: none; 
+        }
+        #slider img.active { display: block; }
+        button { padding: 10px 20px; margin: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Image Slider</h2>
+
+    <div id="slider">
+        <img src="https://picsum.photos/id/1015/500/300" class="active">
+        <img src="https://picsum.photos/id/1016/500/300">
+        <img src="https://picsum.photos/id/1018/500/300">
+        <img src="https://picsum.photos/id/1020/500/300">
+    </div>
+
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+    <script>
+        let slides = document.querySelectorAll("#slider img");
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) slide.classList.add("active");
+            });
+        }
+
+        document.getElementById("next").addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById("prev").addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+    </script>
+
+</body>
+</html>

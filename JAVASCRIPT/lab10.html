@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Load Example</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-bottom: 10px;
+        }
+
+        #content {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            min-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Load External Content using AJAX</h2>
+
+    <button id="loadBtn">Load Content</button>
+
+    <div id="content">
+        Content will appear here...
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#loadBtn").click(function () {
+
+                $("#content").load("data.html", function (response, status, xhr) {
+
+                    if (status == "error") {
+                        $("#content").html("Error: " + xhr.status + " " + xhr.statusText);
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

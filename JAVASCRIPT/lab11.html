@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Chaining Example</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(149, 147, 143);
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            margin-top: 20px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Chaining using slideUp & slideDown</h3>
+    <button id="btn">Animate Box</button>
+    <div id="box">Hello</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // Method chaining
+                $("#box").slideUp(1000).slideDown(1000);
+            });
+        });
+    </script>
+
+</body>
+</html>

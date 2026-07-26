@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("button").click(function(){
+
+        $("#box")
+            .slideUp(3000)
+            .slideDown(3000);
+
+    });
+
+});
+</script>
+
+<style>
+#box {
+    width: 200px;
+    height: 100px;
+    background: lightblue;
+}
+</style>
+
+</head>
+
+<body>
+
+<button>Start Animation</button>
+
+<div id="box"></div>
+
+</body>
+</html>

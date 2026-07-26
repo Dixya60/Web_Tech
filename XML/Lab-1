@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE books [
+    <!ELEMENT books (book+)>
+    <!ELEMENT book (title, author, isbn, publisher, edition, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT isbn (#PCDATA)>
+    <!ELEMENT publisher (#PCDATA)>
+    <!ELEMENT edition (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<books>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen</author>
+        <isbn>9780262033848</isbn>
+        <publisher>MIT Press</publisher>
+        <edition>3rd</edition>
+        <price>$75.50</price>
+    </book>
+
+    <book>
+        <title>Computer Networks</title>
+        <author>Andrew S. Tanenbaum</author>
+        <isbn>9780132126953</isbn>
+        <publisher>Pearson</publisher>
+        <edition>5th</edition>
+        <price>$62.00</price>
+    </book>
+</books>

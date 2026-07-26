@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="songs">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="song" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="singer" type="xs:string"/>
+                            <xs:element name="composed_by" type="xs:string"/>
+                            <xs:element name="length" type="xs:string"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

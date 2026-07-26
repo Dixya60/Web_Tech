@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (name, roll, address, faculty)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT roll (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ELEMENT faculty (#PCDATA)>
+]>
+
+<students>
+    <student>
+        <name>Ram Sharma</name>
+        <roll>1</roll>
+        <address>Kathmandu</address>
+        <faculty>CSIT</faculty>
+    </student>
+
+    <student>
+        <name>Sita Bhattarai</name>
+        <roll>2</roll>
+        <address>Lalitpur</address>
+        <faculty>BIT</faculty>
+    </student>
+
+    <student>
+        <name>Hari Thapa</name>
+        <roll>3</roll>
+        <address>Bhaktapur</address>
+        <faculty>CSIT</faculty>
+    </student>
+</students>

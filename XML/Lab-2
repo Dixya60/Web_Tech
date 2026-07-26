@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="employee.xsd">
+
+    <employee>
+        <name>Ram Sharma</name>
+        <address>Kathmandu, Nepal</address>
+        <phone>9800000000</phone>
+        <designation>Software Engineer</designation>
+        <salary>50000</salary>
+    </employee>
+
+</employees>

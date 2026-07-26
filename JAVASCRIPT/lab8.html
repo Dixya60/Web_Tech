@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Operations</title>
+</head>
+
+<body>
+
+    <h2>Cookie Operations</h2>
+
+    <input type="text" id="name" placeholder="Cookie name">
+    <input type="text" id="value" placeholder="Cookie value">
+
+    <br><br>
+
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+
+    <p id="output"></p>
+
+    <script>
+
+        // Set cookie
+        function setCookie() {
+            let name = document.getElementById("name").value;
+            let value = document.getElementById("value").value;
+
+            document.cookie = name + "=" + value;
+
+            document.getElementById("output").innerHTML =
+                "Cookie Set: " + name + "=" + value;
+        }
+
+        // Get cookie
+        function getCookie() {
+            document.getElementById("output").innerHTML =
+                "Cookies: " + document.cookie;
+        }
+
+        // Delete cookie
+        function deleteCookie() {
+            let name = document.getElementById("name").value;
+
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+            document.getElementById("output").innerHTML =
+                "Cookie Deleted: " + name;
+        }
+
+    </script>
+
+</body>
+</html>

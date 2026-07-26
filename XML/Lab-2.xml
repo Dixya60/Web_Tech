@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="Lab-2.xsd">
+
+    <employee>
+        <name>Ram Sharma</name>
+        <address>Kathmandu, Nepal</address>
+        <phone>9800000000</phone>
+        <designation>Software Engineer</designation>
+        <salary>50000</salary>
+    </employee>
+
+    <employee>
+        <name>Sita Gurung</name>
+        <address>Pokhara, Nepal</address>
+        <phone>9811111111</phone>
+        <designation>System Analyst</designation>
+        <salary>60000</salary>
+    </employee>
+
+</employees>

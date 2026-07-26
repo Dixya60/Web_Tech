@@ -1,0 +1,4 @@
+Dikshya,21,IT
+Mamata,20,CS
+Pujan,22,BCA
+Rita, 21, BIM

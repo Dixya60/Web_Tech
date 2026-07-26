@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array and forEach Demo</title>
+</head>
+
+<body>
+    <h1>Animals Array Example</h1>
+    <button onclick="showAnimals()">Show Animals</button>
+
+    <script>
+        function showAnimals() {
+            let animals = ["Dog", "Cat", "Elephant", "Tiger", "Lion"];
+            console.log("Animal Array:", animals);
+            animals.forEach(function(item, index) {
+                console.log(index + " : " + item);
+            });
+        }
+    </script>
+
+</body>
+</html>
